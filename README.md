@@ -1,6 +1,6 @@
 # Blankit
 
-Wrap your game project together in Blankit™!
+Wrap your game project together in Blankit!
 
 Blankit is an all-in-one framework for making games in the Godot Engine. It's my way of giving back to the community!
 
