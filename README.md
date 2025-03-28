@@ -1,4 +1,4 @@
-# 🛏️ Blankit 🧰
+<img src="branding/blankitcolorwhiteH.png" width="512" alt="Blankit logo">
 
 > ⚠️ Blankit is in active development as part of a secret Snoozy Kazoo project.
 >
