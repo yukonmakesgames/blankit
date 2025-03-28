@@ -21,4 +21,5 @@ Features in-development:
 - Remote Configurations that you can host on your website that Blankit will automatically download and allow you to pull from on launch.
 - An API Handling system that allows you to plug-and-play SDKs after building the initial connection.
 - A full localization tool allowing you to setup loc terms, export to csv files, and import back into Blankit!
+- Pausing and time management.
 - And more! (If I or you can think of anything!)
