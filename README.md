@@ -12,6 +12,8 @@ Blankit is an all-in-one framework for making games in the Godot Engine. Blankit
 
 It's my way of giving back to the community!
 
+Unfortunately, due to this being a side-project, Blankit will only support the most modern version of Godot. We will not be porting or maintaining it for any older version of Godot. Feel free to fork it if you want to support it yourself!
+
 # 📔 About 🤔
 
 The idea here is you can just add Blankit to your project, click a few buttons, type some words, and boom, you have a lot of basic systems, such as saving data, loading scenes, and achievements built in!
