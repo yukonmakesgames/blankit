@@ -11,9 +11,29 @@ config_version=5
 [application]
 
 config/name="Blankit"
-config/description="Wrap your game project together in Blankit™!"
+config/description="Wrap your game project together in Blankit!"
+run/main_scene="uid://dwvkkqt3ia6mc"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="blankit"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+BlankitRuntime="*res://addons/blankit/BlankitRuntime.gd"
+BlankitModals="*res://addons/blankit/systems/modals/BlankitModals.tscn"
+BlankitSaving="*res://addons/blankit/systems/saving/BlankitSaving.gd"
+BlankitTime="*res://addons/blankit/systems/time/BlankitTime.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/blankit/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://addons/blankit/": "purple"
+}
 
 [rendering]
 
