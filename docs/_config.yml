@@ -12,6 +12,8 @@ favicon_ico: "/assets/images/favicon.ico"
 aux_links:
   "Blankit on GitHub":
     - "//github.com/yukonmakesgames/blankit"
+  "Blankit on Godot Asset Library":
+    - "//godotengine.org/asset-library/asset/3907"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true

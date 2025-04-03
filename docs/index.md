@@ -23,7 +23,7 @@ Blankit is a bunch of simple versions of these tools with an intuitive workflow 
 
 You can install Blankit as an addon within your Godot project a few ways.
 
-### Godot Asset Library (PENDING APPROVAL)
+### Godot Asset Library
 
 1. Open your Godot project
 2. Navigate to the AssetLib tab
