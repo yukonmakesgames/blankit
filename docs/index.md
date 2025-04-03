@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-# Wrap your Godot game project in a cozy Blankit!
+# {{ site.description }}
 {: .fs-8 }
 
 An all-in-one framework for making games in the Godot Engine, Blankit contains a ton of tools to allow you to jump straight into gameplay programming, without worrying about the backend.
