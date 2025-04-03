@@ -1,6 +1,6 @@
 <img src="addons/blankit/branding/blankit_color_white_horizontal_logo.png" width="512" alt="Blankit logo">
 
-> WARNING ⚠️
+> ⚠️ WARNING ⚠️
 >
 > Blankit is still in active development, and has not been tested in a production environment!
 
