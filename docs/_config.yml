@@ -10,9 +10,9 @@ favicon_ico: "/assets/images/favicon.ico"
 
 # Aux links for the upper right navigation
 aux_links:
-  "Blankit on GitHub":
+  "GitHub":
     - "//github.com/yukonmakesgames/blankit"
-  "Blankit on Godot Asset Library":
+  "Godot Asset Library":
     - "//godotengine.org/asset-library/asset/3907"
 
 # Makes Aux links open in a new tab. Default is false
