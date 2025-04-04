@@ -5,7 +5,7 @@ theme: just-the-docs
 
 url: https://blankit.tools
 
-logo: "https://raw.githubusercontent.com/yukonmakesgames/blankit/refs/heads/main/addons/blankit/branding/blankit_color_black_horizontal_logo.png"
+logo: "/assets/images/logo.png"
 favicon_ico: "/assets/images/favicon.ico"
 
 # Aux links for the upper right navigation
