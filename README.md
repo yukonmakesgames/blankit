@@ -1,8 +1,6 @@
 <img src="addons/blankit/branding/blankit_color_white_horizontal_logo.png" width="512" alt="Blankit logo">
 
-> ⚠️ WARNING ⚠️
->
-> Blankit is still in active development, and has not been tested in a production environment!
+> ⚠️ Blankit is still in active development, and has not been tested in a production environment!
 
 Wrap your Godot game project in a cozy Blankit!
 
