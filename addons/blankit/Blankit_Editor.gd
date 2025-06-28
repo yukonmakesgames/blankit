@@ -82,7 +82,7 @@ func editor_log(_string:String, _error:bool = false):
 
 #initialize custom node types, which adds them to the "add new node" menu
 func add_custom_nodes():
-	add_custom_type("EnumOptionButton", "OptionButton", load("res://addons/blankit/nodes/EnumOptionButton.cs"), preload("res://addons/blankit/icons/enum_dropdown_blankit_icon.svg"))
+	add_custom_type("EnumOptionButton", "OptionButton", load("res://addons/blankit/nodes/EnumOptionButton.cs"), preload("res://addons/blankit/icons/enum_dropdown_blankit_node_icon.png"))
 	
 #clean up the custom node types so they don't bother users after removing the addon
 func remove_custom_nodes():
