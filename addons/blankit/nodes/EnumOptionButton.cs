@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-[GodotClassName("EnumOptionButton")]
+[GodotClassName("EnumOptionButton"), Icon("res://addons/blankit/icons/enum_dropdown_blankit_icon.svg")]
 public partial class EnumOptionButton : OptionButton {
 	#region signals
 	
