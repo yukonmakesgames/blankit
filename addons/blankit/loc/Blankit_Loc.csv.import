@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cl61lwky8yeow"
+
+[deps]
+
+files=["res://addons/blankit/loc/Blankit_Loc.en.translation"]
+
+source_file="res://addons/blankit/loc/Blankit_Loc.csv"
+dest_files=["res://addons/blankit/loc/Blankit_Loc.en.translation"]
+
+[params]
+
+compress=true
+delimiter=0

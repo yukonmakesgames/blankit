@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgq53olc5o8i2"]
+
+[ext_resource type="Script" uid="uid://dyc40sa1n8x07" path="res://addons/blankit/tools/scripts/Blkt_SceneLoading.gd" id="1_r7qf0"]
+[ext_resource type="PackedScene" uid="uid://dd1e20woo8com" path="res://addons/blankit/modules/Module_SceneTransition_Fade.tscn" id="2_hdd0v"]
+
+[node name="Loading" type="CanvasLayer"]
+layer = 64
+follow_viewport_enabled = true
+script = ExtResource("1_r7qf0")
+fallback_scene_transition = ExtResource("2_hdd0v")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1

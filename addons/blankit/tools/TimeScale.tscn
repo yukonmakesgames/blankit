@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dogdtrbs6rw7y"]
+
+[ext_resource type="Script" uid="uid://cflpcavb7un26" path="res://addons/blankit/tools/scripts/Blkt_TimeScale.gd" id="1_ja13u"]
+
+[node name="Time" type="Node"]
+script = ExtResource("1_ja13u")

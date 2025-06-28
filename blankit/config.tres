@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BlankitConfig" load_steps=2 format=3 uid="uid://dlkr5s3wqarrk"]
+
+[ext_resource type="Script" uid="uid://cgl33hxl3e7ed" path="res://addons/blankit/Blankit_Config.gd" id="1_0p5pv"]
+
+[resource]
+script = ExtResource("1_0p5pv")
+index = "blkt"
+mode = 0
+canvas_layer_layer = 64
+save_file_version = 1
+amount_of_slots = 8

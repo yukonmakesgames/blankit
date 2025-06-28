@@ -11,19 +11,16 @@ config_version=5
 [application]
 
 config/name="Blankit"
-config/description="Wrap your game project together in Blankit!"
-run/main_scene="uid://dwvkkqt3ia6mc"
+config/description="Wrap your Godot game project in a cozy Blankit!"
+run/main_scene="uid://dostjair6dnrh"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="blankit"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://dfk8cn3qeli8h"
 
 [autoload]
 
-BlankitRuntime="*res://addons/blankit/BlankitRuntime.gd"
-BlankitModals="*res://addons/blankit/systems/modals/BlankitModals.tscn"
-BlankitSaving="*res://addons/blankit/systems/saving/BlankitSaving.gd"
-BlankitTime="*res://addons/blankit/systems/time/BlankitTime.gd"
+Blankit="*res://addons/blankit/Blankit.tscn"
 
 [editor_plugins]
 

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://xvdvhnkkn7a0"]
+
+[ext_resource type="Script" uid="uid://1sdmvdm74a43" path="res://addons/blankit/tools/scripts/Blkt_Saving.gd" id="1_x2ou1"]
+[ext_resource type="PackedScene" uid="uid://dceu4jxf2enr1" path="res://addons/blankit/modules/Module_Scribe_PC.tscn" id="2_fyhw8"]
+[ext_resource type="PackedScene" uid="uid://bu8xmmwko8u7h" path="res://addons/blankit/modals/Saving_Modal.tscn" id="2_mff15"]
+
+[node name="Saving" type="CanvasLayer"]
+layer = 64
+script = ExtResource("1_x2ou1")
+default_scribe_module = ExtResource("2_fyhw8")
+saving_modal = ExtResource("2_mff15")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
