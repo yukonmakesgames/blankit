@@ -3,7 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-[GodotClassName("EnumOptionButton"), Icon("res://addons/blankit/icons/enum_dropdown_blankit_icon.svg")]
+/// <summary>
+/// A version of OptionButton that can be automatically populated with the values of an enum.
+/// Also emits a signal with the selected enum value (as an integer) when an option is selected.
+/// </summary>
+[Tool]
 public partial class EnumOptionButton : OptionButton {
 	#region signals
 	
