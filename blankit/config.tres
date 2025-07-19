@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="BlankitConfig" load_steps=2 format=3 uid="uid://dlkr5s3wqarrk"]
 
-[ext_resource type="Script" uid="uid://cgl33hxl3e7ed" path="res://addons/blankit/Blankit_Config.gd" id="1_0p5pv"]
+[ext_resource type="Script" uid="uid://bpfe44u8aaiy7" path="res://addons/blankit/Blankit_Config.gd" id="1_0p5pv"]
 
 [resource]
 script = ExtResource("1_0p5pv")
