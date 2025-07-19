@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dd1e20woo8com"]
 
-[ext_resource type="Script" uid="uid://cf886xlqd4uip" path="res://addons/blankit/modules/scripts/Blkt_Module_SceneTransition_Fade.gd" id="1_dwi4h"]
+[ext_resource type="Script" uid="uid://d2aln1q76yibj" path="res://addons/blankit/modules/scripts/Blkt_Module_SceneTransition_Fade.gd" id="1_dwi4h"]
 
 [node name="FadeSceneTransitionModule" type="ColorRect" node_paths=PackedStringArray("color_rect")]
 anchors_preset = 15

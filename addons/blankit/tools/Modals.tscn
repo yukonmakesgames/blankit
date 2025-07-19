@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://4ksis46c5hme"]
 
-[ext_resource type="Script" uid="uid://b77xcvebje85n" path="res://addons/blankit/tools/scripts/Blkt_Modals.gd" id="1_llg7m"]
+[ext_resource type="Script" uid="uid://c7byus1slu8d4" path="res://addons/blankit/tools/scripts/Blkt_Modals.gd" id="1_llg7m"]
 
 [node name="Modals" type="CanvasLayer"]
 layer = 64

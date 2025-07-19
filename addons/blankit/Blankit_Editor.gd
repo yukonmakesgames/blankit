@@ -34,7 +34,6 @@ func _ready() -> void:
 	while _fs.is_scanning():
 		await get_tree().process_frame
 	check_configs()
-	add_custom_nodes()
 	if !_fs.is_scanning():
 		_fs.scan()
 
@@ -42,8 +41,6 @@ func _exit_tree():
 	# Remove autoloads
 	for autoload in AUTOLOADS:
 		remove_autoload_singleton(autoload)
-	# remove custom node types
-	remove_custom_nodes()
 	# Inform the user that Blankit has successfully unloaded
 	editor_log("Successfully unloaded.")
 
@@ -75,17 +72,5 @@ func editor_log(_string:String, _error:bool = false):
 	# Print a log
 	else:
 		print("[Blankit Editor] " + _string)
-
-#endregion
-
-#region custom node functions
-
-#initialize custom node types, which adds them to the "add new node" menu
-func add_custom_nodes():
-	add_custom_type("EnumOptionButton", "OptionButton", load("res://addons/blankit/nodes/EnumOptionButton.cs"), preload("res://addons/blankit/icons/enum_dropdown_blankit_node_icon.png"))
-	
-#clean up the custom node types so they don't bother users after removing the addon
-func remove_custom_nodes():
-	remove_custom_type("EnumOptionButton")
 
 #endregion

@@ -1,6 +1,7 @@
 class_name BlktModuleSceneTransition extends Node
 
-
+signal is_covered
+signal is_revealed
 
 #region Functions
 
@@ -11,16 +12,16 @@ func _cover() -> void:
 
 
 func covered() -> void:
-	pass
+	is_covered.emit()
 
 
 # To be overridden by user-made scene transitions
 func _reveal() -> void:
 	Blankit.runtime_log("Blankit Scene Transition Module Reveal is not implemented!", true)
-	revealed()
+	revealed
 
 
 func revealed() -> void:
-	pass
+	is_revealed.emit()
 
 #endregion

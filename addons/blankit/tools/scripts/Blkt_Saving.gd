@@ -12,10 +12,10 @@ signal saved
 
 #region Variables
 
-@export_category("Modules")
+@export_group("Modules")
 @export var default_scribe_module : PackedScene
 
-@export_category("Packed Scenes")
+@export_group("Packed Scenes")
 @export var saving_modal : PackedScene
 
 var scribe_module : BlktModuleScribe = null

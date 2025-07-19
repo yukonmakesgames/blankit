@@ -5,7 +5,11 @@ class_name BlktSceneLoading extends CanvasLayer
 
 #region Variables
 
-@export var fallback_scene_transition : PackedScene
+@export_group("Packed Scenes")
+@export var fallback_scene_transition_module : PackedScene
+
+@export_group("References")
+@export var root : Control = null
 
 var new_scene_path : String = ""
 var loading_new_scene : bool = false
@@ -25,20 +29,36 @@ func _ready() -> void:
 #endregion
 
 
-func load_scene(_scene:PackedScene) -> void:
+func get_default_scene_transition_module() -> PackedScene:
+	if Blankit.config.default_scene_transition_module != null:
+		return Blankit.config.default_scene_transition_module
+	if fallback_scene_transition_module == null:
+		Blankit.runtime_log("DO NOT REMOVE THE FALLBACK SCENE TRANSITION MODULE! THIS IS REQUIRED FOR LOADING TO WORK!", true)
+	return fallback_scene_transition_module
+
+
+func load_scene(_scene : PackedScene, _scene_transition_module : PackedScene = null) -> void:
 	if visible:
 		return
 	# Set values
 	visible = true
 	new_scene_path = _scene.resource_path
 	loading_new_scene = false
-	# Unpause if paused
-	Blankit.TimeScale.unpause()
+	if _scene_transition_module == null:
+		_scene_transition_module = get_default_scene_transition_module()
+	# Load
 	if get_tree():
+		var _current_scene_transition_module : BlktModuleSceneTransition = _scene_transition_module.instantiate()
+		root.add_child(_current_scene_transition_module)
+		_current_scene_transition_module._cover()
+		await _current_scene_transition_module.is_covered
 		# Remove current scene
-		get_tree().current_scene.queue_free()  
-		await !is_instance_valid(get_tree().current_scene)
+		get_tree().current_scene.queue_free()
+		while is_instance_valid(get_tree().current_scene):
+			await get_tree().process_frame
 		Blankit.runtime_log("Current scene successfully unloaded.")
+		# Unpause if paused
+		Blankit.TimeScale.unpause()
 		# Load the new scene
 		var _err = ResourceLoader.load_threaded_request(new_scene_path)
 		if _err != OK:
@@ -58,6 +78,8 @@ func load_scene(_scene:PackedScene) -> void:
 				get_tree().root.add_child(_new_scene_instance)
 				get_tree().current_scene = _new_scene_instance
 				loading_new_scene = false
+		_current_scene_transition_module._reveal()
+		await _current_scene_transition_module.is_revealed
 		Blankit.runtime_log("New scene successfully loaded.")
 		visible = false
 

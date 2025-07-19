@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dostjair6dnrh"]
 
-[ext_resource type="Script" uid="uid://bnbrjotlqdv3f" path="res://addons/blankit/Blankit.gd" id="1_msykj"]
+[ext_resource type="Script" uid="uid://i7c4am88mrre" path="res://addons/blankit/Blankit.gd" id="1_msykj"]
 [ext_resource type="PackedScene" uid="uid://4ksis46c5hme" path="res://addons/blankit/tools/Modals.tscn" id="2_i3h2r"]
 [ext_resource type="PackedScene" uid="uid://dgq53olc5o8i2" path="res://addons/blankit/tools/SceneLoading.tscn" id="2_puexq"]
 [ext_resource type="PackedScene" uid="uid://xvdvhnkkn7a0" path="res://addons/blankit/tools/Saving.tscn" id="3_puexq"]

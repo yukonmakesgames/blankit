@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dceu4jxf2enr1"]
 
-[ext_resource type="Script" uid="uid://uh0ekgy67q6p" path="res://addons/blankit/modules/scripts/Blkt_Module_Scribe_PC.gd" id="1_wpd28"]
+[ext_resource type="Script" uid="uid://dxj7ancigmika" path="res://addons/blankit/modules/scripts/Blkt_Module_Scribe_PC.gd" id="1_wpd28"]
 
 [node name="PCScribeModule" type="Node"]
 script = ExtResource("1_wpd28")

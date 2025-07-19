@@ -19,6 +19,8 @@ enum Mode {
 @export_range(-128, 120, 1) var canvas_layer_layer : int = 64
 
 @export_group("Saving")
+## Allows you to define a default scene transition. If this is not set, and you do not define one in your code, a black fade will be used.
+@export var default_scene_transition_module : PackedScene
 ## Allows you to inject custom saving logic into Blankit Saving. Use this if you need to save files as anything but unencrypted JSON files.
 @export var scribe_module_override : PackedScene
 ## Allows you to version your save files. Older versions will automatically be deleted. Increase this if you want to wipe saves.

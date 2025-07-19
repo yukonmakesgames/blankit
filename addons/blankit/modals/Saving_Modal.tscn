@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bu8xmmwko8u7h"]
+[gd_scene load_steps=11 format=3 uid="uid://bu8xmmwko8u7h"]
 
-[ext_resource type="Script" uid="uid://ervp4ebvat26" path="res://addons/blankit/modals/scripts/SavingModal.gd" id="1_8oxny"]
+[ext_resource type="Script" uid="uid://i1ja382gw6u1" path="res://addons/blankit/modals/scripts/SavingModal.gd" id="1_8oxny"]
+[ext_resource type="Texture2D" uid="uid://bj0jqxoc4yc64" path="res://assets/textures/ui/menu/stories/veggieville_icon_texture.png" id="2_dsivv"]
 [ext_resource type="PackedScene" uid="uid://bdr3m3681jk3e" path="res://addons/blankit/modals/SaveSlot_Button.tscn" id="2_tij43"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6n67j"]
@@ -97,6 +98,7 @@ script = ExtResource("1_8oxny")
 save_slot_button = ExtResource("2_tij43")
 header_label = NodePath("MarginContainer/VBoxContainer/HeaderLabel")
 save_list = NodePath("MarginContainer/VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer")
+metadata/_custom_type_script = "uid://1v0dsd5qpr7p"
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -105,6 +107,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_dsivv")
 expand_mode = 3
 stretch_mode = 6
 

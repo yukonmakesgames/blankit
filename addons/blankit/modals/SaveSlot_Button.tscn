@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bdr3m3681jk3e"]
 
-[ext_resource type="Script" uid="uid://cpn50l2x553sq" path="res://addons/blankit/modals/scripts/SaveSlot_Button.gd" id="1_rdk5k"]
+[ext_resource type="Script" uid="uid://c5sw5hptfbe5k" path="res://addons/blankit/modals/scripts/SaveSlot_Button.gd" id="1_rdk5k"]
 
 [node name="SaveSlotButton" type="Button"]
 text = "Autosave: 01/01/2025 11:59PM - Veggieville"
